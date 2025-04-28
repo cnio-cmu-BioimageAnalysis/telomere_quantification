@@ -1,0 +1,5 @@
+/data/
+/output/
+/internal_documentation/
+__pycache__/
+*.pyc
