@@ -106,7 +106,9 @@ def process_csv_file(input_path, output_path):
    
     # Save processed CSV
     try:
-        df.to_csv(output_path, sep='\t', index=False)
-        print(f"Processed file saved: {output_path}")
+        # Get the output path without the file extension
+        output_path = os.path.splitext(output_path)[0]
+        df.to_csv(f"{output_path}_processed.csv", sep='\t', index=False)
+        print(f"Processed file saved: {output_path}_processed.csv")
     except Exception as e:
         print(f"Error saving {output_path}: {e}")
