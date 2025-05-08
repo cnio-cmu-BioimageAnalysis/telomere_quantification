@@ -80,3 +80,8 @@ Each output CSV will include the following new calculated columns:
 | `Max intensity*number of foci - mean per cell` | Mean per nucleus of max intensity × number of foci |
 
 6. You can now use the processed data for further analysis!
+
+# QuPath analysis script
+
+This script will segment the nuclei of the cells with Cellpose deep learning models, using Channel 1(DAPI). After this step, it will segment, with a threshold-based algorithm, the spots (telomeres) on Channel 3. Then, it will calculate Max and Min intensities for each spot. And finally, it will export all measurements as a tab-separated csv file per image. If you want a per-cell summary of the spot measurements, you will have to run the python script mentioned above, to process all the csv files that QuPath generates. Before running this script, please create a folder named "output" at the same level as the QuPath project files.
+
