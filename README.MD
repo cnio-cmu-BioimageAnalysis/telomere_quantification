@@ -28,8 +28,9 @@ This Python script processes the output CSV files from QuPath telomere segmentat
     <img width="700" height="350" src="images/miniforge.png">
     </p>
 
+   **TELOMERES AND TELOMERASE GROUP**: In the analysis computer of your Group there is already an specific environment created. In order to use it open the Ubuntu terminal (type on the search bar: Ubuntu).
 
-2. Activate the `cellpose` environment (or the environment where your required packages are installed).  
+2. Activate the conda environment (or the environment where your required packages are installed).  
 If you used Anaconda to install Cellpose, you can activate it by typing:
 
 ```bash
@@ -38,12 +39,21 @@ conda activate cellpose
 
 **Note**: If you installed the dependencies in a different environment, make sure to activate the correct one.
 
+**TELOMERES AND TELOMERASE GROUP**: On the Ubuntu terminal type:
+```bash
+conda activate telomere_quantification
+```
+
 ## Running the script
 
 1. Navigate to the location where you downloaded the repository and **inside the src folder in the repository**:
 
 ```bash
 cd path/to/telomere_quantification/src
+```
+**TELOMERES AND TELOMERASE GROUP**: After downlowing the code and if you have in the Downloads folder of your computer type:
+```bash
+cd /mnt/c/Users/analysisuser/Downloads/telomere_quantification-main/telomere_quantification-main/src
 ```
 
 2. Run the main Python script:
