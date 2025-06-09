@@ -1,4 +1,4 @@
-name: /apps/miniconda3/envs/confo_envs_mcalvo/telomere_quantification
+name: telomere_quantification
 channels:
   - defaults
 dependencies:
