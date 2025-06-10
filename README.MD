@@ -66,8 +66,10 @@ python main.py
    - **Input directory**: The folder where your QuPath telomere segmentation CSV files are stored.
 
         **CAUTION**: The **input directory must contain only the .csv files you want to process**.Do **not** include any other files in that folder, as the script assumes all files ending in .csv are valid inputs and will attempt to process them. 
+        **TELOMERES AND TELOMERASE GROUP**: Do not have blank spaces in the paths/folders. For the input path you should always put at the beginning: /mnt/c/Users/analysisuser/. After that you should put the Windows path where you have created the QuPath output folder. It is recommended to put it always on the desktop for            simplicity. If so, you would put:/mnt/c/Users/analysisuser/Desktop/QuPath_project/output
    
    - **Output directory**: The folder where the processed CSV files with the new calculated features will be saved.
+      **TELOMERES AND TELOMERASE GROUP**: Do not have blank spaces in the paths/folders. As for the input path you should always put at the beginning: /mnt/c/Users/analysisuser/. After that you should put the Windows path where you have created the Python output folder. It is recommended to put it always on the desktop               for simplicity. If so, you would put:/mnt/c/Users/analysisuser/Desktop/output_python
 
 4. After selecting the directories, the script will start processing each file.
 When the processing finishes, you will see a message in the terminal for each file like:
